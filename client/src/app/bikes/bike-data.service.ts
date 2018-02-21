@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { Bike } from './bike';
 
 @Injectable()
 export class BikeDataService {
@@ -7,9 +8,9 @@ export class BikeDataService {
   constructor(private http: HttpClient) {   }
 
   public getBikes(){
-    return this.http.get(BikeDataService.endpoint);
+    return this.http.get<Bike[]>(BikeDataService.endpoint);
   }
   public getBikeById(id : number){
-    return this.http.get(BikeDataService.endpoint + `/${id}`);
+    return this.http.get<Bike>(BikeDataService.endpoint + `/${id}`);
   }
 }
