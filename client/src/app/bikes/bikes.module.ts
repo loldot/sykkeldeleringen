@@ -6,6 +6,8 @@ import { BikeListComponent } from './bike-list/bike-list.component';
 import { BikeDataService } from './bike-data.service';
 import { SharedModule } from '../shared/shared.module';
 import { MapViewComponent } from './map-view/map-view.component';
+import { BikeDetailsComponent } from './bike-details/bike-details.component';
+import { BikeViewComponent } from './bike-view/bike-view.component';
 
 @NgModule({
   imports: [
@@ -13,7 +15,7 @@ import { MapViewComponent } from './map-view/map-view.component';
     SharedModule,
     BikesRoutingModule
   ],
-  declarations: [BikeListComponent, MapViewComponent],
+  declarations: [BikeListComponent, MapViewComponent, BikeDetailsComponent, BikeViewComponent],
   providers: [BikeDataService]
 })
 export class BikesModule { }

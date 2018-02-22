@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { BikeListComponent } from './bike-list/bike-list.component';
 import { MapViewComponent } from './map-view/map-view.component';
+import { BikeViewComponent } from './bike-view/bike-view.component';
 
 const routes: Routes = [
-  { path: '', component: BikeListComponent },
+  { path: '', component: BikeViewComponent },
   { path: 'map', component: MapViewComponent }
 ];
 

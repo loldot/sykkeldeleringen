@@ -1,0 +1,8 @@
+<div class="container-fluid">
+    <div class="row">
+        <sdr-bike-list (onSelectionChanged)="selectBike($event)" class="col-md-3">
+        </sdr-bike-list>
+        <sdr-bike-details [bike]="selectedBike" class="col-md-9">
+        </sdr-bike-details>
+    </div>
+</div>
