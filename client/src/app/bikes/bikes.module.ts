@@ -5,6 +5,7 @@ import { BikesRoutingModule } from './bikes-routing.module';
 import { BikeListComponent } from './bike-list/bike-list.component';
 import { BikeDataService } from './bike-data.service';
 import { SharedModule } from '../shared/shared.module';
+import { MapViewComponent } from './map-view/map-view.component';
 
 @NgModule({
   imports: [
@@ -12,7 +13,7 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule,
     BikesRoutingModule
   ],
-  declarations: [BikeListComponent],
+  declarations: [BikeListComponent, MapViewComponent],
   providers: [BikeDataService]
 })
 export class BikesModule { }
