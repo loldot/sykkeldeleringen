@@ -31,7 +31,7 @@ namespace webapi.Controllers
         }
 
         // GET: api/bikes/5/location
-        [HttpGet("bikes/{bikeId}/location")]
+        [HttpGet("/api/bikes/{bikeId}/location")]
         public async Task<IActionResult> GetBikeLocation([FromRoute] int bikeId)
         {
             if (!ModelState.IsValid)
@@ -40,7 +40,7 @@ namespace webapi.Controllers
             }
 
             var bikeLocation = await _context.BikeLocations
-                            .FromSql("select * from bikes.vwBikeLocations where BikeId = ?;", bikeId)
+                            .FromSql("select * from bikes.vwBikeLocations where BikeId = {0}", bikeId)
                             .FirstAsync();
 
             if (bikeLocation == null)

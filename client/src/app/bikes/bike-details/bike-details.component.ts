@@ -7,12 +7,19 @@ import { Bike } from '../bike';
   styleUrls: ['./bike-details.component.css']
 })
 export class BikeDetailsComponent implements OnInit {
+  
+  private _bike : Bike;
+  public get bike() : Bike {
+    return this._bike;
+  }
   @Input('bike')
-  public bike : Bike;
+  public set bike(bk : Bike ){
+    this._bike = bk;
+  }
+  public bikeLocations = [];
   
   constructor() { }
 
   ngOnInit() {
   }
-
 }

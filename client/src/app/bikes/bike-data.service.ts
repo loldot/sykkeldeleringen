@@ -18,4 +18,7 @@ export class BikeDataService {
   public getBikeLocations(){
     return this.http.get<BikeLocation[]>(BikeDataService.endpoint + '/bikelocations');
   }
+  public getBikeLocation(id : number){
+    return this.http.get<BikeLocation>(BikeDataService.endpoint + `/bikes/${id}/location`);
+  }
 }
