@@ -62,7 +62,12 @@ namespace webapi
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseCors(p => p.AllowAnyOrigin());
+                app.UseCors(p =>
+                {
+                    p.AllowAnyOrigin();
+                    p.AllowAnyHeader();
+                    p.AllowAnyMethod();
+                });
             }
             app.UseAuthentication();
             app.UseMvc();

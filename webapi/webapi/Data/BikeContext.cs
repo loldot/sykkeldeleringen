@@ -8,7 +8,7 @@ namespace webapi.data
 {
     public class BikeContext : DbContext
     {
-        public BikeContext(DbContextOptions options)
+        public BikeContext(DbContextOptions<BikeContext> options)
             : base(options) { }
         public DbSet<Bike> Bikes { get; set; }
         public DbSet<BikeLocation> BikeLocations { get; set; }
