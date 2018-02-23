@@ -2,23 +2,23 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Bike } from './bike';
 import { BikeLocation } from './bikelocation';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class BikeDataService {
-  static endpoint = 'http://localhost:58451/api'
   constructor(private http: HttpClient) {   }
 
   public getBikes(){
-    return this.http.get<Bike[]>(BikeDataService.endpoint + '/bikes');
+    return this.http.get<Bike[]>(`${environment.apiEndpoint}/bikes`);
   }
   public getBikeById(id : number){
-    return this.http.get<Bike>(BikeDataService.endpoint + `/bikes/${id}`);
+    return this.http.get<Bike>(`${environment.apiEndpoint}/bikes/${id}`);
   }
 
   public getBikeLocations(){
-    return this.http.get<BikeLocation[]>(BikeDataService.endpoint + '/bikelocations');
+    return this.http.get<BikeLocation[]>(`${environment.apiEndpoint}/bikelocations`);
   }
   public getBikeLocation(id : number){
-    return this.http.get<BikeLocation>(BikeDataService.endpoint + `/bikes/${id}/location`);
+    return this.http.get<BikeLocation>(`${environment.apiEndpoint}/bikes/${id}/location`);
   }
 }

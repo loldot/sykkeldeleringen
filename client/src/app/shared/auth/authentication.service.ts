@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { tokenKey } from '@angular/core/src/view';
+import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class AuthenticationService {
-  static endpoint = 'http://localhost:58451/api/account/';
+  static endpoint = `${environment.apiEndpoint}/account/`;
   static tokenKey = 'sdr_jwt_token';
 
   constructor(private http: HttpClient) {

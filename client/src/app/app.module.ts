@@ -3,7 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 
-import { NgModule } from '@angular/core';
+import { NgModule, InjectionToken } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -12,9 +12,7 @@ import { PathNotFoundComponent } from './path-not-found/path-not-found.component
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { SharedModule } from './shared/shared.module';
-import { LoginComponent } from './login/login.component';
-
-
+import { LoginComponent } from './users/login/login.component';
 
 @NgModule({
   declarations: [

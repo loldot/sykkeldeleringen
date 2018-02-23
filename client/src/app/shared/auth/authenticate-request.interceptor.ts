@@ -5,6 +5,7 @@ import 'rxjs/add/observable/throw';
 
 import { AuthenticationService } from "./authentication.service";
 import { Injectable } from "@angular/core";
+import { environment } from "../../../environments/environment";
 
 @Injectable()
 export class AuthenticateRequestInterceptor implements HttpInterceptor {
@@ -12,11 +13,12 @@ export class AuthenticateRequestInterceptor implements HttpInterceptor {
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
         let token = this.authService.getToken();
-        let headers = new HttpHeaders({
-            'Authorization': `Bearer ${token}`
-        });
         
-        if (req.url.startsWith('http://localhost:58451/api/') && token) {
+        if (req.url.startsWith(environment.apiEndpoint) && token) {
+            let headers = new HttpHeaders({
+                'Authorization': `Bearer ${token}`
+            });
+
             let authenticatedRequest = req.clone({ headers });
             return next.handle(authenticatedRequest);
         }

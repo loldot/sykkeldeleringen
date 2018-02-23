@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthenticationService } from '../shared/shared.module';
+import { AuthenticationService } from '../../shared/shared.module';
 
 @Component({
   selector: 'sdr-login',
