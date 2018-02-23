@@ -1,4 +1,7 @@
 <h2>Sykler</h2>
+
+<label>Søkeradius</label>
+<mat-slider min="1" max="15" [(ngModel)]="searchRadius" thumbLabel></mat-slider>
 <mat-nav-list>
   <a mat-list-item *ngFor="let bike of bikes" (click)="selectBike(bike)" >{{bike.description}}</a>
 </mat-nav-list>

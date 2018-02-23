@@ -8,10 +8,12 @@ import { SharedModule } from '../shared/shared.module';
 import { MapViewComponent } from './map-view/map-view.component';
 import { BikeDetailsComponent } from './bike-details/bike-details.component';
 import { BikeViewComponent } from './bike-view/bike-view.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
     CommonModule,
+    FormsModule,
     SharedModule,
     BikesRoutingModule
   ],

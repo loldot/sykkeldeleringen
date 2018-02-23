@@ -6,10 +6,14 @@ import { environment } from '../../environments/environment';
 
 @Injectable()
 export class BikeDataService {
+  
   constructor(private http: HttpClient) {   }
 
   public getBikes(){
     return this.http.get<Bike[]>(`${environment.apiEndpoint}/bikes`);
+  }
+  public getBikesWithinRadius(lat: number, long: number, searchRadius: number): any {
+    return this.http.get<Bike[]>(`${environment.apiEndpoint}/bikes?lat=${lat}&long=${long}&radius=${searchRadius}`);
   }
   public getBikeById(id : number){
     return this.http.get<Bike>(`${environment.apiEndpoint}/bikes/${id}`);

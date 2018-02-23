@@ -17,7 +17,7 @@ namespace webapi.Controllers
     public class BikesController : Controller
     {
         private readonly BikeContext _context;
-        private const string radiusSearchQuery = @"select * 
+        private const string radiusSearchQuery = @"select B.* 
 from bikes.Bikes B inner
 join
 bikes.Locations L on B.ID = L.BikeId
