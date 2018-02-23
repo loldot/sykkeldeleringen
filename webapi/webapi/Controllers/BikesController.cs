@@ -17,6 +17,11 @@ namespace webapi.Controllers
     public class BikesController : Controller
     {
         private readonly BikeContext _context;
+        private const string radiusSearchQuery = @"select * 
+from bikes.Bikes B inner
+join
+bikes.Locations L on B.ID = L.BikeId
+where L.[Location].STDistance(geography::Point({0}, {1}, 4326)) <= {2}";
 
         public BikesController(BikeContext context)
         {
@@ -25,8 +30,12 @@ namespace webapi.Controllers
 
         // GET: api/Bikes
         [HttpGet]
-        public async Task<IEnumerable<Bike>> GetBikes()
+        public async Task<IEnumerable<Bike>> GetBikes([FromQuery] double? lat, [FromQuery] double? @long, [FromQuery] double radius = 5000)
         {
+            if (lat.HasValue && @long.HasValue)
+            {
+                return await _context.Bikes.FromSql(radiusSearchQuery, lat, @long, radius).ToListAsync();
+            }
             return await _context.Bikes.ToListAsync();
         }
 

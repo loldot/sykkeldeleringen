@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Console;
 using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Text;
@@ -14,6 +16,8 @@ namespace webapi
 {
     public class Startup
     {
+        private static ILoggerFactory loggerFactory = new LoggerFactory(new[] { new ConsoleLoggerProvider((str, level) => true, true) });
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -27,7 +31,9 @@ namespace webapi
             string connectionString = Configuration.GetConnectionString("BikesDatabase");
 
             services.AddMvc();
-            services.AddDbContext<BikeContext>(opts => opts.UseSqlServer(connectionString));
+            services.AddDbContext<BikeContext>(opts => opts
+                .UseSqlServer(connectionString)
+                .UseLoggerFactory(loggerFactory));
             services.AddDbContext<ApplicationDbContext>(opts => opts.UseSqlServer(connectionString));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
