@@ -48,7 +48,6 @@ export class MapViewComponent implements OnInit {
 
   private focus(bikeId: number) {
     let location = this._bikeLocations.find(loc => loc.bikeId === bikeId);
-    this._streetMap.setZoom(15);
-    this._streetMap.panTo([location.latitude, location.longitude]);
+    this._streetMap.setView([location.latitude, location.longitude], 15);
   }
 }
