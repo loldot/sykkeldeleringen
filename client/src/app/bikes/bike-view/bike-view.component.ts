@@ -14,6 +14,5 @@ export class BikeViewComponent implements OnInit {
   }
   selectBike(bike: Bike){
     this.selectedBike = bike;
-    console.log('selected bike=' + bike.id);
   }
 }
