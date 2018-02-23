@@ -1,0 +1,8 @@
+<h2>Logg inn</h2>
+  <mat-form-field>
+    <input matInput [(ngModel)]="username" placeholder="brukernavn" type="text" name="username" />
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput [(ngModel)]="password" placeholder="passord" type="password" name="password" />
+  </mat-form-field>
+  <button (click)="signIn($event)">Logg inn</button>
