@@ -1,9 +1,8 @@
 <mat-toolbar color="primary">
-  <h2 class="title">Sykkeldeleringen</h2>
-  <a mat-button [routerLink]="['/home']" routerLinkActive="router-link-active">
-    <span>Hjem</span>
-  </a>
-  <a mat-button [routerLink]="['/bikes']" routerLinkActive="router-link-active">
-    <span>Sykler</span>
-  </a>
+  <mat-toolbar-row>
+    <h2 class="title">Sykkeldeleringen</h2>
+
+    <a mat-button [routerLink]="['/home']" routerLinkActive="router-link-active">Hjem</a>
+    <a mat-button [routerLink]="['/bikes']" routerLinkActive="router-link-active">Sykler</a>
+  </mat-toolbar-row>
 </mat-toolbar>

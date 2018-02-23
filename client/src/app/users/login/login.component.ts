@@ -8,7 +8,7 @@ import { AuthenticationService } from '../../shared/shared.module';
 })
 export class LoginComponent implements OnInit {
   public username:string;
-  private password:string;
+  public password:string;
   constructor(private authService: AuthenticationService) { }
 
   ngOnInit() {
