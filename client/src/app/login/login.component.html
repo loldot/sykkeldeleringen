@@ -1,8 +1,18 @@
-<h2>Logg inn</h2>
-  <mat-form-field>
-    <input matInput [(ngModel)]="username" placeholder="brukernavn" type="text" name="username" />
-  </mat-form-field>
-  <mat-form-field>
-    <input matInput [(ngModel)]="password" placeholder="passord" type="password" name="password" />
-  </mat-form-field>
-  <button (click)="signIn($event)">Logg inn</button>
+<div class="container-fluid">
+  <div class="row">
+    <h2>Logg inn</h2>
+  </div>
+  <div class="row" style="max-width:640px">
+    <mat-form-field class="col-sm-5">
+      <input matInput [(ngModel)]="username" placeholder="brukernavn" type="text" name="username" />
+    </mat-form-field>
+    <mat-form-field class="col-sm-5">
+      <input matInput [(ngModel)]="password" placeholder="passord" type="password" name="password" />
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <div class="col-sm-2">
+      <button mat-raised-button color="primary" (click)="signIn($event)">Logg inn</button>
+    </div>
+  </div>
+</div>
