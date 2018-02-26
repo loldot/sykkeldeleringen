@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:trolltech="urn:trolltech:names:ts:document:1.0">
+  <file original="app/path-not-found/path-not-found.component.ts" datatype="plaintext" source-language="nb-NO" target-language="en-US"><body>
+    <trans-unit id="err404Title">
+      <source xml:space="preserve">Feil 404: Ikke funnet!</source>
+      <target xml:space="preserve" state="needs-review-translation">Error 404: Not found!</target>
+      <context-group purpose="location"><context context-type="linenumber">2</context></context-group>
+    </trans-unit>
+    <trans-unit id="err404Description">
+      <source xml:space="preserve">Du ødela internett - godt jobbet</source>
+      <target xml:space="preserve" state="needs-review-translation">You broke the internet - good job!</target>
+      <context-group purpose="location"><context context-type="linenumber">3</context></context-group>
+    </trans-unit>
+  </body></file>
+  <file original="app/home/home.component.ts" datatype="plaintext" source-language="nb-NO" target-language="en-US"><body>
+    <trans-unit id="homePageWorks">
+      <source xml:space="preserve">Hjemmesiden virker!</source>
+      <target xml:space="preserve" state="needs-review-translation">Home works!</target>
+      <context-group purpose="location"><context context-type="linenumber">2</context></context-group>
+    </trans-unit>
+  </body></file>
+  <file original="app/nav/nav.component.ts" datatype="plaintext" source-language="nb-NO" target-language="en-US"><body>
+    <trans-unit id="bikeShareRingAppName">
+      <source xml:space="preserve">Sykkeldeleringen</source>
+      <target xml:space="preserve" state="needs-review-translation">Bikesharing</target>
+      <context-group purpose="location"><context context-type="linenumber">3</context></context-group>
+    </trans-unit>
+  </body></file>
+  <file original="app/users/login/login.component.ts" datatype="plaintext" source-language="nb-NO" target-language="en-US"><body>
+    <trans-unit id="loginHeader">
+      <source xml:space="preserve">Logg inn</source>
+      <target xml:space="preserve" state="needs-review-translation">Log in</target>
+      <context-group purpose="location"><context context-type="linenumber">3</context></context-group>
+    </trans-unit>
+    <trans-unit id="username">
+      <source xml:space="preserve">brukernavn</source>
+      <target xml:space="preserve" state="needs-review-translation">User name</target>
+      <context-group purpose="location"><context context-type="linenumber">7</context></context-group>
+    </trans-unit>
+    <trans-unit id="password">
+      <source xml:space="preserve">passord</source>
+      <target xml:space="preserve" state="needs-review-translation">Password</target>
+      <context-group purpose="location"><context context-type="linenumber">10</context></context-group>
+      <context-group purpose="location"><context context-type="sourcefile">app/users/register/register.component.ts</context><context context-type="linenumber">5</context></context-group>
+    </trans-unit>
+    <trans-unit id="loginButton">
+      <source xml:space="preserve">Logg inn</source>
+      <target xml:space="preserve" state="needs-review-translation">Log in</target>
+      <context-group purpose="location"><context context-type="linenumber">15</context></context-group>
+    </trans-unit>
+    <trans-unit id="noUser">
+      <source xml:space="preserve">Ingen bruker? </source>
+      <target xml:space="preserve" state="needs-review-translation">No user? </target>
+      <context-group purpose="location"><context context-type="linenumber">19</context></context-group>
+    </trans-unit>
+    <trans-unit id="registerUserLinkText">
+      <source xml:space="preserve">Registrer deg her.</source>
+      <target xml:space="preserve" state="needs-review-translation">Register here.</target>
+      <context-group purpose="location"><context context-type="linenumber">19</context></context-group>
+    </trans-unit>
+  </body></file>
+  <file original="app/bikes/bike-list/bike-list.component.ts" datatype="plaintext" source-language="nb-NO" target-language="en-US"><body>
+    <trans-unit id="bikeHeader">
+      <source xml:space="preserve">Sykler</source>
+      <target xml:space="preserve" state="needs-review-translation">Bikes</target>
+      <context-group purpose="location"><context context-type="linenumber">1</context></context-group>
+    </trans-unit>
+    <trans-unit id="searchRadius">
+      <source xml:space="preserve">Søkeradius</source>
+      <target xml:space="preserve" state="needs-review-translation">Search radius</target>
+      <context-group purpose="location"><context context-type="linenumber">3</context></context-group>
+    </trans-unit>
+  </body></file>
+  <file original="app/users/register/register.component.ts" datatype="plaintext" source-language="nb-NO" target-language="en-US"><body>
+    <trans-unit id="email">
+      <source xml:space="preserve">E-post</source>
+      <target xml:space="preserve" state="needs-review-translation">Email</target>
+      <context-group purpose="location"><context context-type="linenumber">2</context></context-group>
+    </trans-unit>
+    <trans-unit id="confirmPassword">
+      <source xml:space="preserve">Bekreft passord</source>
+      <target xml:space="preserve" state="needs-review-translation">Confirm password</target>
+      <context-group purpose="location"><context context-type="linenumber">8</context></context-group>
+    </trans-unit>
+    <trans-unit id="bfac0b3c94bd59ae2ed74318bfb22fc26a8fbef4">
+      <source xml:space="preserve">Registrer</source>
+      <target xml:space="preserve" state="needs-review-translation">Register</target>
+      <context-group purpose="location"><context context-type="linenumber">13</context></context-group>
+      <note from="translator">registerUserButton</note>
+    </trans-unit>
+    <trans-unit id="b9c94f269f6015c4ccff8d3cbfd8deff6b9cb74a">
+      <source xml:space="preserve">Avbryt</source>
+      <target xml:space="preserve" state="needs-review-translation">Cancel</target>
+      <context-group purpose="location"><context context-type="linenumber">16</context></context-group>
+      <note from="translator">cancelButton</note>
+    </trans-unit>
+  </body></file>
+  <file original="app/users/me/me.component.ts" datatype="plaintext" source-language="nb-NO" target-language="en-US"><body>
+    <trans-unit id="meWorks">
+      <source xml:space="preserve">om meg virker!</source>
+      <target xml:space="preserve" state="needs-review-translation">About me works!</target>
+      <context-group purpose="location"><context context-type="linenumber">1</context></context-group>
+    </trans-unit>
+  </body></file>
+</xliff>

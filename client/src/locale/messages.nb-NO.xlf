@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="err404Title" datatype="html">
+        <source>Feil 404: Ikke funnet!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/path-not-found/path-not-found.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="err404Description" datatype="html">
+        <source>Du ødela internett - godt jobbet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/path-not-found/path-not-found.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homePageWorks" datatype="html">
+        <source>Hjemmesiden virker!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bikeShareRingAppName" datatype="html">
+        <source>Sykkeldeleringen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/nav/nav.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginHeader" datatype="html">
+        <source>Logg inn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/users/login/login.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="username" datatype="html">
+        <source>brukernavn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/users/login/login.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="password" datatype="html">
+        <source>passord</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/users/login/login.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/users/register/register.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginButton" datatype="html">
+        <source>Logg inn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/users/login/login.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="noUser" datatype="html">
+        <source>Ingen bruker? </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/users/login/login.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="registerUserLinkText" datatype="html">
+        <source>Registrer deg her.</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/users/login/login.component.ts</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bikeHeader" datatype="html">
+        <source>Sykler</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/bikes/bike-list/bike-list.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="searchRadius" datatype="html">
+        <source>Søkeradius</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/bikes/bike-list/bike-list.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="email" datatype="html">
+        <source>E-post</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/users/register/register.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="confirmPassword" datatype="html">
+        <source>Bekreft passord</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/users/register/register.component.ts</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bfac0b3c94bd59ae2ed74318bfb22fc26a8fbef4" datatype="html">
+        <source>Registrer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/users/register/register.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <note priority="1" from="description">registerUserButton</note>
+      </trans-unit>
+      <trans-unit id="b9c94f269f6015c4ccff8d3cbfd8deff6b9cb74a" datatype="html">
+        <source>Avbryt</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/users/register/register.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="description">cancelButton</note>
+      </trans-unit>
+      <trans-unit id="meWorks" datatype="html">
+        <source>om meg virker!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/users/me/me.component.ts</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
