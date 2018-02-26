@@ -3,9 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'sdr-home',
   template: `
-    <p>
-      home works!
-    </p>
+    <p i18n="@@homePageWorks">Hjemmesiden virker!</p>
   `,
   styles: []
 })

@@ -1,18 +1,18 @@
 <mat-form-field>
-  <input matInput type="text" [(ngModel)]="email" placeholder="E-post" required />
+  <input matInput type="text" [(ngModel)]="email" i18n-placeholder="@@email" placeholder="E-post" required />
 </mat-form-field>
 <mat-form-field>
-    <input matInput type="password" [(ngModel)]="password" placeholder="Passord" required />
+    <input matInput type="password" [(ngModel)]="password" i18n-placeholder="@@password" placeholder="Passord" required />
 </mat-form-field>
 <mat-form-field>
-    <input matInput type="password" [(ngModel)]="confirmPassword" placeholder="Bekreft passord" required />
+    <input matInput type="password" [(ngModel)]="confirmPassword" i18n-placeholder="@@confirmPassword" placeholder="Bekreft passord" required />
 </mat-form-field>
 
 <div class="row">
     <div class="col-sm-2">
-      <button mat-raised-button color="primary" (click)="register($event)">Registrer</button>
+      <button mat-raised-button color="primary" (click)="register($event)" i18n="registerUserButton">Registrer</button>
     </div>
     <div class="col-sm-2">
-        <button mat-raised-button color="warn" (click)="cancel($event)">Avbryt</button>
+        <button mat-raised-button color="warn" (click)="cancel($event)"i18n="cancelButton">Avbryt</button>
       </div>
   </div>

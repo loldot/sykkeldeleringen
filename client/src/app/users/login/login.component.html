@@ -1,21 +1,21 @@
 <div id="login" class="container-fluid">
   <div class="row">
-    <h2>Logg inn</h2>
+    <h2 i18n="@@loginHeader">Logg inn</h2>
   </div>
   <div class="row" >
     <mat-form-field class="col-sm-5">
-      <input matInput [(ngModel)]="username" placeholder="brukernavn" type="text" name="username" />
+      <input matInput [(ngModel)]="username" i18n-placeholder="@@username" placeholder="brukernavn" type="text" name="username" />
     </mat-form-field>
     <mat-form-field class="col-sm-5">
-      <input matInput [(ngModel)]="password" placeholder="passord" type="password" name="password" />
+      <input matInput [(ngModel)]="password" i18n-placeholder="@@password" placeholder="passord" type="password" name="password" />
     </mat-form-field>
   </div>
   <div class="row">
     <div class="col-sm-2">
-      <button mat-raised-button color="primary" (click)="signIn($event)">Logg inn</button>
+      <button mat-raised-button color="primary" (click)="signIn($event)" i18n="@@loginButton">Logg inn</button>
     </div>
   </div>
   <div class="row"> 
-    <p>Ingen bruker? <a [routerLink]="['/users/register']" routerLinkActive="router-link-active">Registrer deg her.</a></p>
+    <p i18n="@@noUser">Ingen bruker? <a [routerLink]="['/users/register']" routerLinkActive="router-link-active" i18n="@@registerUserLinkText">Registrer deg her.</a></p>
   </div>
 </div>
