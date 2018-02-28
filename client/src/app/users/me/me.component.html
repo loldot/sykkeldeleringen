@@ -1,1 +1,9 @@
-<p i18n="@@meWorks">om meg virker!</p>
+<div id="root">
+    <div *ngIf="currentUser">
+        <span>{{currentUser}}</span>
+        <button mat-button (click)="signOut()" i18n="@@logOut">Logg ut</button>
+    </div>
+    <div *ngIf="!currentUser">
+        <button mat-button [routerLink]="['/login']" routerLinkActive="router-link-active" i18n="@@loginButton">Logg inn</button>
+    </div>
+</div>

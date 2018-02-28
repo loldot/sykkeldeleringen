@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-  <file source-language="en" datatype="plaintext" original="ng2.template">
+  <file source-language="nb-NO" datatype="plaintext" original="ng2.template">
     <body>
-      <trans-unit id="err404Title" datatype="html">
-        <source>Feil 404: Ikke funnet!</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/path-not-found/path-not-found.component.ts</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="err404Description" datatype="html">
-        <source>Du ødela internett - godt jobbet</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/path-not-found/path-not-found.component.ts</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="homePageWorks" datatype="html">
-        <source>Hjemmesiden virker!</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/home/home.component.ts</context>
-          <context context-type="linenumber">2</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="bikeShareRingAppName" datatype="html">
-        <source>Sykkeldeleringen</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/nav/nav.component.ts</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="loginHeader" datatype="html">
         <source>Logg inn</source>
         <context-group purpose="location">
@@ -76,20 +48,6 @@
           <context context-type="linenumber">19</context>
         </context-group>
       </trans-unit>
-      <trans-unit id="bikeHeader" datatype="html">
-        <source>Sykler</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/bikes/bike-list/bike-list.component.ts</context>
-          <context context-type="linenumber">1</context>
-        </context-group>
-      </trans-unit>
-      <trans-unit id="searchRadius" datatype="html">
-        <source>Søkeradius</source>
-        <context-group purpose="location">
-          <context context-type="sourcefile">app/bikes/bike-list/bike-list.component.ts</context>
-          <context context-type="linenumber">3</context>
-        </context-group>
-      </trans-unit>
       <trans-unit id="email" datatype="html">
         <source>E-post</source>
         <context-group purpose="location">
@@ -120,11 +78,74 @@
         </context-group>
         <note priority="1" from="description">cancelButton</note>
       </trans-unit>
-      <trans-unit id="meWorks" datatype="html">
-        <source>om meg virker!</source>
+      <trans-unit id="logOut" datatype="html">
+        <source>Logg ut</source>
         <context-group purpose="location">
           <context context-type="sourcefile">app/users/me/me.component.ts</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="loginLink" datatype="html">
+        <source>Logg inn</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/users/me/me.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="err404Title" datatype="html">
+        <source>Feil 404: Ikke funnet!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/path-not-found/path-not-found.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="err404Description" datatype="html">
+        <source>Du ødela internett - godt jobbet</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/path-not-found/path-not-found.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homePageWorks" datatype="html">
+        <source>Hjemmesiden virker!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/home/home.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bikeShareRingAppName" datatype="html">
+        <source>Sykkeldeleringen</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/nav/nav.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="homeLink" datatype="html">
+        <source>Hjem</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/nav/nav.component.ts</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bikesLink" datatype="html">
+        <source>Sykler</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/nav/nav.component.ts</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="bikeHeader" datatype="html">
+        <source>Sykler</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/bikes/bike-list/bike-list.component.ts</context>
           <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="searchRadius" datatype="html">
+        <source>Søkeradius</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/bikes/bike-list/bike-list.component.ts</context>
+          <context context-type="linenumber">3</context>
         </context-group>
       </trans-unit>
     </body>

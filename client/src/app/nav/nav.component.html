@@ -2,7 +2,8 @@
   <mat-toolbar-row>
     <h2 class="title" i18n="@@bikeShareRingAppName">Sykkeldeleringen</h2>
 
-    <a mat-button [routerLink]="['/home']" routerLinkActive="router-link-active">Hjem</a>
-    <a mat-button [routerLink]="['/bikes']" routerLinkActive="router-link-active">Sykler</a>
+    <button mat-button [routerLink]="['/home']" routerLinkActive="router-link-active" i18n="@@homeLink">Hjem</button>
+    <button mat-button [routerLink]="['/bikes']" routerLinkActive="router-link-active" i18n="@@bikesLink">Sykler</button>
+    <sdr-me></sdr-me>
   </mat-toolbar-row>
 </mat-toolbar>

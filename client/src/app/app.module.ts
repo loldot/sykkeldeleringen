@@ -12,7 +12,7 @@ import { PathNotFoundComponent } from './path-not-found/path-not-found.component
 import { HomeComponent } from './home/home.component';
 import { NavComponent } from './nav/nav.component';
 import { SharedModule } from './shared/shared.module';
-import { LoginComponent } from './users/login/login.component';
+import { UsersModule } from './users/users.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +20,6 @@ import { LoginComponent } from './users/login/login.component';
     PathNotFoundComponent,
     HomeComponent,
     NavComponent,
-    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +27,8 @@ import { LoginComponent } from './users/login/login.component';
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
-    SharedModule
+    SharedModule,
+    UsersModule
   ],
   providers: [],
   bootstrap: [AppComponent]
