@@ -1,15 +1,14 @@
 matrix:
   include:
     - language: csharp
-    before_script:
-      - cd webapi
-    solution: webapi.sln
-  include:
+      before_script:
+        - cd webapi
+      solution: webapi.sln
     - language: node_js
-    node_js: 8
-    cache:
-    directories:
-    - node_modules
-    before_script:
-      - cd client
-    script: npm run build
+      node_js: 8
+      cache:
+      directories:
+        - node_modules
+      before_script:
+        - cd client
+      script: npm run build
