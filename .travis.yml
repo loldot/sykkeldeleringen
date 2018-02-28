@@ -3,7 +3,8 @@ matrix:
     - language: csharp
       mono: none
       dotnet: 2.1.4
-      solution: webapi/webapi.sln
+      before_script:
+        - cd webapi
       script: dotnet build
     - language: node_js
       node_js: 8
