@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  webapi:
+    image: webapi
+    build:
+      context: .
+      dockerfile: webapi\Dockerfile
+  client:
+    image: client
+    build:
+      context: ..
+      dockerfile: client\DockerFile
