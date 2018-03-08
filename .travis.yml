@@ -1,10 +1,3 @@
-env:
-  global:
-  - DOCKER_USER: sdrcontainerreg
-  - secure: lPnO5IA7+bx6Yx+RtybJ8URJ9Is7lDsUXNzvCUmC8TjIRODrDmHLVAOU6R4LDAl6lBvQDurNPD5HcyM3TgVYo1n2JqlGBzX2RAfRaGAMrkQolesUTqbIvdeJn+GkfChdgprlNf4gXLMF+xnZXUNMPr3eKIacR5voynAgrY3QNLUBxk7UHa0Pn+JZ9qg+ZjxDg0mHKpI2l+Y9G7zUqIEErO29+QNJdYOJsW1TuhVAcWSKcybA49mdea6zfC0jN6idjXsOMKxsaPz7inY4Wc47LC/iqOpZ3oce7eLA7S0uV8h3r8vhU7DZYLrcJRGOPUBSPtaKuAWibHhWAsbeH+IrW0SggCJp08J5QVs3WllkJ3HmBsninsQ31C4u5G6UzicJ06YwXIs22Y9e3LtlSRSYtSVR6Jm+nN2EFvk+3vFgxhtDyscyPqaabsJl+/bgwaB9dKF4BdVWp41wO6GORP4ZyryK2kg2YV7uLDvspQSyulwQSFVXKKJo/O7B/YH0S9JYuO2ijch+bZFYwD8jeENp9v9nUVGqWsUTVXYjW9Nd8ZpcEMcyf5qsRW38flQYgeeJ4bPikX5fV7+JsqV4alGSEFk6+gg8DdndTk1x31+yoZPU3MLp4QVZJxQhf9EaiUjWwGTLXVSjEbszfb89Ly/nd2Of0xfUbFELADU4JC2SKvM=
-  - secure: uhYvpWy26/okSxTd1UQBWoChBUPmu6A3lHcDP0ty1UuSD8DcAjRYLNvn9+T2c434Q9NrH+fvNWJWwZ4oQv0VHC36CKgbEiorGHmR/H04g2VwR0XVwB3hvR3fzI5Q4jhyxBZro+EP7jl+kbg4zUXoIxEVNhq+qZ0qQNuk/TvatAcH2Fj1kd+s9bTaXVD7bZ967QTjQzvsdI72gnIJ3CdzHhMofC2zcMHFfCWyxG021YL8L0KjnKSMnruJ+e+PxsZTkaef90txNw8rN4FWjjTwlgEWhNB0NLsS/2WMcMZ3nySXXBR7hh0o19A6V/GgOpwimU0FkzCk4Z01EozK9Oz3g54fX5W348ZFv3JSaIMW5562Kam4g5hsRVFBnT5k4y3KNKfhIunoR38pRyCPGVyegQSGq9dsn9f5RemFm40pSWXcENRr4nGD1rvIqIQrlBp1eV3bhvGeQL634NQ4fxCLL4ZJwL3eXpR9HTNX5UWsAiGbT5a19Kb80NGpwafQuyNk1nasKbklgNsbMphEXnucO3VB6TN9JTV0njlpSgY/D772mzPfiSywc3VhGY5ZW+OY2adI7sjbfT5Tj09g/yjaFXoiOMor2tTPnJcdsPS0PlS3ryNjrltMoYtzmPqyfyImeCeANc2TBxxzYQ8EU0Tskoij9+jX4DvFRQd6PbuL5vw=
-  - secure: c5ag9E+hvQqtZVp40K3iQbN5MsPVzhjbZpJpVmOJvtsjTYh+cFnh6i14Z2ysLbCzTpc7gj05hajqO7jOA17oBp16lnszOlpHgI6KdbeQ/2hBvUp1T3P2K1nhsRSoGp7sbp/0xR61Av8/XfOhOlkaL/MQBRic2IK0cPaYQsgZ/7azYhGQdY3q8/1MmrRT6u0uVNYXq8oCnLQYgbgr1ozUNlDbtc8Zs9ambSbw5qqnsGVq5cYtmvbNgylZgA7WMKcr710iKRWJPTDaqAWISzpad6g9KwPqu3jbwkUn1+u6OGt0/A9CkdqBICfQtcErZuClpjmMQB3G3pyd4nxKqizqkW4Sw4p3eddnZsN5pgEi3YkroIbNjM2d61D9JiSgFLUJ2gxmxbBTvz7+6cMWbQz2DVJpiRHdYjL3+i1dEK/eF+1OsmmMSNgjNkO4gGtXQJePmcZxO4psFU67lLgcdGBVL2gOIZ5C5570PYgkgui/E2vIJgHyaOQafszdk0h6YaeF1/E5/x+Yp/K1Cw6nX3/XoYwu7lWJ7/4MNm3fWBnRmMEs4ul0NMKpokpF64OgwdYxwEl+QJ9HbVUgu8TctnaG6AAe5nRKF/OzEviHVH6eEEJsSenlGEHttEqD6UK39mh3u56nHXb+UKNZxudL3W9pvCzEB/6oe4RW9Rsqm3EsC9k=
-  - secure: L6q1F6Gfz3Hwri4xOl8razU2btSADXansPsO+44S0nYMrWFmdhln1MIv4RP9eJjAnmgX2Xq4arXHaxAh+MB7HQaZ1NdG+5SrqdMAsaO2KA2I/qRsw3d+JIFeauHIEBwFzifzZq+8JHD2DRf1vtLhuTDzsWriCGgrZjcphjy7r8DyvfvBLIaNd31dsh6EoBil685WJxOY3HZn/ScsaLU7BlylKg/IhcMdz3s3aLHyIm3hpn28R4RDZXFryKnq3hjt4myLl9I/C4Y8r2hAy0LYFv8Rtme84m5GODuB2BHmpUgcym5rzKkqQW1HipPIfy1MKVtNmy7Y9SirKdrZSzUCbWSdRYNqNUMbtfmxsnKjNni1kwvTBp5/A095rVFiOeeCw53vM8p7segIDuXRRoqUUxnWzBOeNUw6UcyD85wcBK5w0WJYeUTTEHXVW7HOa5TbuoD4VddmHN1GyFFfWxK5kldLzUmPKAA9Th6XyfCNGhn/KJC3VPof3pB5we8e//9syAwI91xRaN3RG+3EJAzKlB75lRdM3/lAgHdLoc1mB1z0gqIobYKFMlVLIyIzSdm5U4/Ly04eP2XHcfQNeN2ToAje8YGnrKgCCrL92dimpLHhVAUQClJ45SQ65Td4OXFvsU8H7C8hxQ4l9Jx8d5BxbCP0SzB/a5if1sr/rCwl6CM=
 matrix:
   include:
   - language: csharp
@@ -16,7 +9,7 @@ matrix:
     - dotnet sln webapi.sln remove docker-compose.dcproj
     script: dotnet build webapi.sln
     after_success:
-    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+    - docker login sdrcontainerreg.azurecr.io -u $DOCKER_USER -p $DOCKER_PASS
     - export REPO=sdrcontainerreg.azurecr.io/webapi
     - docker build -t $REPO:latest -f dockerfile .
     - docker push $REPO
@@ -30,7 +23,7 @@ matrix:
     - npm i g @angular/cli
     script: npm run build
     after_success:
-    - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+    - docker login sdrcontainerreg.azurecr.io -u $DOCKER_USER -p $DOCKER_PASS
     - export REPO=sdrcontainerreg.azurecr.io/client
     - docker build -t $REPO:latest -f dockerfile .
     - docker push $REPO
