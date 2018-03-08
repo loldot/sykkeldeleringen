@@ -9,7 +9,7 @@ matrix:
     - dotnet sln webapi.sln remove docker-compose.dcproj
     script: dotnet build webapi.sln
     after_success:
-    - docker login sdrcontainerreg.azurecr.io -u $DOCKER_USER -p $DOCKER_PASS
+    - docker login -u $DOCKER_USER -p $DOCKER_PASS sdrcontainerreg.azurecr.io
     - export REPO=sdrcontainerreg.azurecr.io/webapi
     - docker build -t $REPO:latest -f dockerfile .
     - docker push $REPO
@@ -23,7 +23,7 @@ matrix:
     - npm i g @angular/cli
     script: npm run build
     after_success:
-    - docker login sdrcontainerreg.azurecr.io -u $DOCKER_USER -p $DOCKER_PASS
+    - docker login -u $DOCKER_USER -p $DOCKER_PASS sdrcontainerreg.azurecr.io
     - export REPO=sdrcontainerreg.azurecr.io/client
     - docker build -t $REPO:latest -f dockerfile .
     - docker push $REPO
