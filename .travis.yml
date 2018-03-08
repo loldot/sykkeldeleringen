@@ -13,6 +13,7 @@ matrix:
     before_script:
     - cd webapi
     - sed -e 's/@password/$DB_PASSWORD/g' -e 's/@jwtSecret/$JWT_SECRET/g' webapi/appsettings.json
+    - dotnet sln webapi.sln remove docker-compose.dcproj
     script: dotnet build webapi.sln
     after_success:
     - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
