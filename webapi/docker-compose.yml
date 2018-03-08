@@ -5,9 +5,4 @@ services:
     image: webapi
     build:
       context: .
-      dockerfile: webapi\Dockerfile
-  client:
-    image: client
-    build:
-      context: ..
-      dockerfile: client\DockerFile
+      dockerfile: webapi/Dockerfile
