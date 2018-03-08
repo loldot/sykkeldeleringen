@@ -9,7 +9,7 @@ import { BikeDataService } from '../bike-data.service';
   styleUrls: ['./map-view.component.css']
 })
 export class MapViewComponent implements OnInit {
-  static accessToken = 'pk.eyJ1IjoibG9yZW50enYiLCJhIjoiY2pkeTd1Z3h0M3pwejJ5cDJiZ2F4MGJzbSJ9.Y0oRnsj8i7zZS7aP03QR_w';
+  static accessToken = 'pk.eyJ1IjoibG9yZW50enYiLCJhIjoiY2plNng3Z3VpMDUwMzJxcGR6c3JzZ2FieSJ9.y5R9n15Uoh5-CJ_Imr0jLA';
   private _streetMap: L.Map;
   private _bikeLocations: BikeLocation[];
   private _focusedBikeId: number;
