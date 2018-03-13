@@ -9,6 +9,7 @@ import { MapViewComponent } from './map-view/map-view.component';
 import { BikeDetailsComponent } from './bike-details/bike-details.component';
 import { BikeViewComponent } from './bike-view/bike-view.component';
 import { FormsModule } from '@angular/forms';
+import { BikeReservationComponent } from './bike-reservation/bike-reservation.component';
 
 @NgModule({
   imports: [
@@ -17,7 +18,12 @@ import { FormsModule } from '@angular/forms';
     SharedModule,
     BikesRoutingModule
   ],
-  declarations: [BikeListComponent, MapViewComponent, BikeDetailsComponent, BikeViewComponent],
+  declarations: [
+    BikeListComponent,
+    MapViewComponent,
+    BikeDetailsComponent, 
+    BikeViewComponent, BikeReservationComponent
+  ],
   providers: [BikeDataService]
 })
 export class BikesModule { }

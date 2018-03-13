@@ -1,0 +1,14 @@
+<h2>Reservér sykkel</h2>
+<mat-form-field>
+  <input matInput [matDatepicker]="picker3" placeholder="Dato" [(ngModel)]="startDate">
+  <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
+  <mat-datepicker #picker3></mat-datepicker>
+</mat-form-field>
+<mat-form-field>
+  <input [(ngModel)]="startTime" type="time" matInput placeholder="Starttidspunkt"  required>
+</mat-form-field>
+<mat-form-field>
+    <input [(ngModel)]="duration" type="number" step="0.5" matInput placeholder="Antall timer"  required>
+</mat-form-field>
+
+<button mat-fab color="primary" (click)="reserve()">ok</button>

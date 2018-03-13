@@ -25,4 +25,12 @@ export class BikeDataService {
   public getBikeLocation(id : number){
     return this.http.get<BikeLocation>(`${environment.apiEndpoint}/bikes/${id}/location`);
   }
+
+  public reserveBike(id:number, start: Date, duration: number){
+    let reservation = {
+      startTime: start,
+      hours: duration
+    };
+    return this.http.post(`${environment.apiEndpoint}/bikes/${id}/reservations`, reservation);
+  }
 }
