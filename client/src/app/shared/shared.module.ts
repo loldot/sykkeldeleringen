@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HTTP_INTERCEPTORS } from '@angular/common/http';
-import { MatButtonModule, MatListModule, MatToolbarModule, MatInputModule, MatFormFieldModule, MatSliderModule } from '@angular/material';
+import { MatButtonModule, MatListModule, MatToolbarModule, MatInputModule, 
+         MatFormFieldModule, MatSliderModule, MatDatepickerModule,
+         MatNativeDateModule, MatCardModule } from '@angular/material';
 import { AuthenticateRequestInterceptor, ChallengeInterceptor } from './auth/authenticate-request.interceptor';
 import { AuthenticationGuard } from './auth/authentication.guard';
 import { AuthenticationService } from './auth/authentication.service'
@@ -16,7 +18,10 @@ export { AuthenticationService } from './auth/authentication.service'
     MatToolbarModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSliderModule
+    MatSliderModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatCardModule
   ],
   exports: [
     MatButtonModule,
@@ -24,7 +29,10 @@ export { AuthenticationService } from './auth/authentication.service'
     MatToolbarModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSliderModule
+    MatSliderModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatCardModule
   ],
   declarations: [],
   providers: [

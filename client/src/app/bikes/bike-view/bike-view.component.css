@@ -1,0 +1,8 @@
+#selectedBikeDetails {
+    position: relative;
+    top: 64px;
+    left:-9%;
+    z-index: 1000;
+    width:400px;
+    height: 400px;
+}

@@ -1,4 +1,13 @@
-<div *ngIf="bike">
-    <h2>{{bike.description}}</h2>
-    <p>color {{bike.color}}</p>
-</div>
+<mat-card *ngIf="bike">
+    <mat-card-header>
+      <mat-card-title>{{bike.description}}</mat-card-title>
+      <mat-card-subtitle>color {{bike.color}}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://c1.staticflickr.com/5/4533/38271809781_e7804ab50c_b.jpg" alt="Photo of a bike">
+    <mat-card-content>
+        Sykt najs sykkel
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="accent">Reservér</button>
+    </mat-card-actions>
+  </mat-card>
