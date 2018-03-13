@@ -1,9 +1,9 @@
-<mat-card *ngIf="bike">
+<mat-card *ngIf="bike" class="mat-elevation-z8">
     <mat-card-header>
       <mat-card-title>{{bike.description}}</mat-card-title>
       <mat-card-subtitle>color {{bike.color}}</mat-card-subtitle>
     </mat-card-header>
-    <img mat-card-image src="https://c1.staticflickr.com/5/4533/38271809781_e7804ab50c_b.jpg" alt="Photo of a bike">
+    <img mat-card-image src="/assets/bikes/{{bike.id}}.jpg" alt="Photo of a bike">
     <mat-card-content>
         Sykt najs sykkel
     </mat-card-content>
