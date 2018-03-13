@@ -8,6 +8,6 @@
         Sykt najs sykkel
     </mat-card-content>
     <mat-card-actions>
-      <button mat-button color="accent">Reservér</button>
+      <a mat-button color="accent"  [routerLink]="['/bikes/reserve', bike.id]">Reservér</a>
     </mat-card-actions>
   </mat-card>

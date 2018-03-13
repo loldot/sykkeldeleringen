@@ -31,7 +31,7 @@ namespace webapi.Controllers
             return Ok(reservation);
         }
 
-        [HttpGet("api/bikes/{bikeId}/reservations")]
+        [HttpGet("api/bikes/{bikeId}/reservations", Name ="ReservationDetails")]
         public async Task<IEnumerable<BikeReservation>> GetReservationsForBike([FromRoute]int bikeId)
         {
             return await _context.Reservations
@@ -65,7 +65,7 @@ namespace webapi.Controllers
             _context.Add(newReservation);
             await _context.SaveChangesAsync();
 
-            return CreatedAtRoute(nameof(GetReservation), newReservation.Id, newReservation);
+            return CreatedAtRoute("ReservationDetails", newReservation.Id, newReservation);
         }
     }
 }

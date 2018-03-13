@@ -1,4 +1,7 @@
 <h2>Reservér sykkel</h2>
+
+<sdr-bike-details [bike]="bike"></sdr-bike-details>
+
 <mat-form-field>
   <input matInput [matDatepicker]="picker3" placeholder="Dato" [(ngModel)]="startDate">
   <mat-datepicker-toggle matSuffix [for]="picker3"></mat-datepicker-toggle>
