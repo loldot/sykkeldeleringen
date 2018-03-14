@@ -6,7 +6,8 @@ import { MatButtonModule, MatListModule, MatToolbarModule, MatInputModule,
          MatNativeDateModule, MatCardModule } from '@angular/material';
 import { AuthenticateRequestInterceptor, ChallengeInterceptor } from './auth/authenticate-request.interceptor';
 import { AuthenticationGuard } from './auth/authentication.guard';
-import { AuthenticationService } from './auth/authentication.service'
+import { AuthenticationService } from './auth/authentication.service';
+import { WebColorPipe } from './web-color.pipe';
 
 export { AuthenticationService } from './auth/authentication.service'
 
@@ -32,9 +33,10 @@ export { AuthenticationService } from './auth/authentication.service'
     MatSliderModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatCardModule
+    MatCardModule,
+    WebColorPipe
   ],
-  declarations: [],
+  declarations: [WebColorPipe],
   providers: [
     AuthenticationService,
     AuthenticationGuard,

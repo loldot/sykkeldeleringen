@@ -1,7 +1,7 @@
 <mat-card *ngIf="bike" class="mat-elevation-z8">
     <mat-card-header>
       <mat-card-title>{{bike.description}}</mat-card-title>
-      <mat-card-subtitle>color {{bike.color}}</mat-card-subtitle>
+      <mat-card-subtitle>farge: <svg height="16" width="16"><circle cx="8" cy="8" r="8" [attr.fill]="bike.color | webColor"></circle></svg></mat-card-subtitle>
     </mat-card-header>
     <img mat-card-image src="/assets/bikes/{{bike.id}}.jpg" alt="Photo of a bike">
     <mat-card-content>
