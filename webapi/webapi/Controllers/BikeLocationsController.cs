@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -12,6 +13,7 @@ namespace webapi.Controllers
 {
     [Produces("application/json")]
     [Route("api/BikeLocations")]
+    [Authorize]
     public class BikeLocationsController : Controller
     {
         private readonly BikeContext _context;

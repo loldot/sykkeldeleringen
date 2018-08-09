@@ -34,11 +34,7 @@ namespace webapi
             services.AddDbContext<BikeContext>(opts => opts
                 .UseSqlServer(connectionString)
                 .UseLoggerFactory(loggerFactory));
-            services.AddDbContext<ApplicationDbContext>(opts => opts.UseSqlServer(connectionString));
-
-            services.AddIdentity<ApplicationUser, IdentityRole>()
-                    .AddEntityFrameworkStores<ApplicationDbContext>()
-                    .AddDefaultTokenProviders();
+            
 
             services
                 .AddAuthentication(options =>
@@ -50,15 +46,15 @@ namespace webapi
                 })
                 .AddJwtBearer(cfg =>
                 {
-                    cfg.RequireHttpsMetadata = false;
-                    cfg.SaveToken = true;
-                    cfg.TokenValidationParameters = new TokenValidationParameters
-                    {
-                        ValidIssuer = Configuration["JwtIssuer"],
-                        ValidAudience = Configuration["JwtIssuer"],
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JwtKey"])),
-                        ClockSkew = TimeSpan.Zero // remove delay of token when expire
-                    };
+                    cfg.Authority = $"https://login.microsoft.com/{Configuration["AADTenantId"]}";
+                    cfg.Audience = Configuration["AADClientId"];
+
+                    //cfg.TokenValidationParameters = new TokenValidationParameters
+                    //{
+                    //    ValidIssuer = Configuration["JwtIssuer"],
+                    //    ValidAudience = Configuration["JwtIssuer"],
+                    //    ClockSkew = TimeSpan.Zero // remove delay of token when expire
+                    //};
                 });
         }
 

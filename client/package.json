@@ -38,6 +38,7 @@
     "@angular/cli": "^6.1.2",
     "@angular/compiler-cli": "^6.1.1",
     "@angular/language-service": "^6.1.1",
+    "@types/adal": "^1.0.29",
     "@types/node": "~6.0.60",
     "codelyzer": "^4.0.1",
     "ts-node": "~4.1.0",

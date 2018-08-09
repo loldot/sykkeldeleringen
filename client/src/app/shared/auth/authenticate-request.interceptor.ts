@@ -12,8 +12,8 @@ export class AuthenticateRequestInterceptor implements HttpInterceptor {
     constructor(private authService: AuthenticationService) { }
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-        let token = this.authService.getToken();
-        
+        let token = this.authService.getToken(req.url);
+
         if (req.url.startsWith(environment.apiEndpoint) && token) {
             let headers = new HttpHeaders({
                 'Authorization': `Bearer ${token}`
@@ -36,8 +36,12 @@ export class ChallengeInterceptor implements HttpInterceptor {
         return next.handle(req).catch(error => {
             if (error instanceof HttpErrorResponse) {
                 if (error.status === 401) {
-                    console.log(`401 for ${req.url}`);
-                    this.authService.refreshToken();
+                    this.authService.refreshToken(environment.apiEndpoint)
+                        .then(token => {
+                            console.log(token);
+                            return next.handle(req);
+                        })
+                        .catch(err => console.error(err));
                 }
             }
             return Observable.throw(error);

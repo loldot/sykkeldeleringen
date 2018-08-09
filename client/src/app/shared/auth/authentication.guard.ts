@@ -10,7 +10,7 @@ export class AuthenticationGuard implements CanActivate {
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot) {
         var isAuthorized = this.auth.isSignedIn();
         if(!isAuthorized){
-            this.router.navigate(['/login']);
+            this.auth.signIn();
         }
         return isAuthorized;
     }

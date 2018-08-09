@@ -3,52 +3,59 @@ import { HttpClient } from '@angular/common/http';
 import { tokenKey } from '@angular/core/src/view';
 import { environment } from '../../../environments/environment';
 import { Router } from '@angular/router';
+import { } from 'adal';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root',
+})
 export class AuthenticationService {
   static endpoint = `${environment.apiEndpoint}/account/`;
   static tokenKey = 'sdr_jwt_token';
+  static config: adal.Config = {
+    clientId: '4c7d2b28-04b4-4627-9111-f7ddd0662fdb',
+    tenant: 'c317fa72-b393-44ea-a87c-ea272e8d963d',
+    popUp: true,
+    redirectUri: 'http://localhost:4200/'
+  };
+
+  private authContext: adal.AuthenticationContext;
 
   constructor(private http: HttpClient, private router: Router) {
+    this.authContext = new AuthenticationContext(AuthenticationService.config);
   }
 
-  signIn(username: string, password: string) {
-    console.log(username);
-    let loginDto = new LoginDTO(username, password);
-    this.http.post(`${AuthenticationService.endpoint}login`, loginDto, { responseType: 'text' })
-      .subscribe(this.setToken);
+  signIn() {
+    if (!this.authContext.loginInProgress()) {
+      this.authContext.login();
+    }
   }
   signOut() {
-    localStorage.removeItem(AuthenticationService.tokenKey);
-    this.router.navigate(['/']);
-  }
-
-  triggerSignIn() {
-    this.router.navigate(['/users/login']);
+    this.authContext.logOut();
   }
 
   isSignedIn(): boolean {
-    return !!this.getToken();
+    return !!this.authContext.getCachedUser();
   }
-
-  setToken(token: string) {
-    console.log('received token: ' + token.substr(0, 64));
-    localStorage.setItem(AuthenticationService.tokenKey, token);
+  
+  getToken(resource): string {
+    return this.authContext.getCachedToken(AuthenticationService.config.clientId);
   }
-  getToken(): string {
-    return localStorage.getItem(AuthenticationService.tokenKey);
+  refreshToken(resource): Promise<string> {
+    let ctx = this.authContext;
+    console.log('refreshing token');
+    return new Promise<string>(function (resolve, reject) {
+        ctx.acquireToken(AuthenticationService.config.clientId, (message, token) => {
+          if (token)
+            resolve(token);
+          else
+            reject(message);
+        });
+    });
   }
-  refreshToken(): any {
-    console.log('refresh token here..');
-  }
-  getCurrentUsername(){
-    let token = this.getToken();
-    if(!token) return null;
-
-    let jwtParts = token.split('.');
-    let claims = JSON.parse(atob(jwtParts[1]));
+  getCurrentUsername(): string {
+    var user = this.authContext.getCachedUser();
     
-    return claims.sub;
+    return user ? user.userName : '';
   }
 }
 class LoginDTO {
